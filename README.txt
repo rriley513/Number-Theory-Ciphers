@@ -17,6 +17,11 @@ Please contact me with any questions after reading my implementation notes.
 
 Implementation notes:
 
+Uploading/ lack of Git history: I actually did write the entire project in 
+a Git Repositry, using careful commits. Renaming the main folder made the 
+repository implode on itself, and after several recovery attempts I just 
+uploaded the source files instead.
+
 *RSA limitations: as said in file comments, a proper RSA cipher would need some
   BigInt equivalent. Such a conversion wouldn't add any fun to the project, so
   it was excluded. Hence, please only use relatively small primes.
