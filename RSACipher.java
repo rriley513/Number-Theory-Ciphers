@@ -24,7 +24,7 @@ public class RSACipher{
   public RSACipher(String myMessage, int P, int Q, int E){
     message = myMessage;
     if (Functions.isPrime(P)) p=P; else System.out.println("Not a prime: "+P);
-    if (Functions.isPrime(Q)) q=Q; else System.out.println("Not a prime: "+Q)
+    if (Functions.isPrime(Q)) q=Q; else System.out.println("Not a prime: "+Q);
     //don't do unnecessary calc if p, q is invalid. This is why e defaults to 1 :)
     if (p!=1 && q!=1) this.setValues(E);
   }
@@ -101,7 +101,7 @@ public class RSACipher{
       String newMessage = "";
       int len = message.length(), index;
 
-      //Note: Like Hill cipher, thsi NEEDS to restrict iteself to letters
+      //Note: Like Hill cipher, this NEEDS to restrict iteself to letters
       //(no punctuation)
       for (int i=0; i<len; i++){
         index = letters.indexOf(message.charAt(i));

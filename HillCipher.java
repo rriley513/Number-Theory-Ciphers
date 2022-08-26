@@ -282,7 +282,7 @@ public class HillCipher{
   }
 
   public static void main(String[] args){
-    String text = "frankenstein2.txt";
+    String text = "frankenstein.txt";
     double[][] scalar = {{1., 2., 3.}, {0., 1., 4.}, {5., 6., 0.}},
               scalar3 = {{3.,0., 0.},{0.,3., 0.}, {0., 0., 3.}},
               scalarID4 = {{1., 0., 0., 0.}, {0., 1., 0., 0.},

@@ -116,8 +116,8 @@ public class ExpCipher{
   }
 
   public static void main(String[] args){
-    //ExpCipher ec = ECFromText("frankensteinCh1.txt", 17, 61);
-    //System.out.println(ec.encipher()+"\n"+ec.decipher());
+    ExpCipher ec = ECFromText("frankensteinCh1.txt", 17, 61);
+    System.out.println(ec.encipher()+"\n"+ec.decipher());
   }
 
 }
