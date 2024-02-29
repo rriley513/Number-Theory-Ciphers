@@ -8,7 +8,7 @@
 
   IMPORTANT: for ease of Matrix operations, the scalar and shift are stored
   as *double* arrays, and rounded *down* when converting to ints for modular
-  aritmetic
+  arithmetic
 */
 
 import matrix.*;
@@ -50,7 +50,7 @@ public class HillCipher{
     enciphered = false;
   }//end constructor
 
-  /*returns a square Indentity Matrix of the given size, ie a matrix I of
+  /*returns a square Identity Matrix of the given size, ie a matrix I of
   size n x n, so that for any matrix A of size n x m, IA=AI=A*/
   private static Matrix IDMatrix(int len){
     double[][] id = new double[len][len];
@@ -156,7 +156,7 @@ public class HillCipher{
     return k;//implicit else
   }
 
-  /*zero paramater helper method for encipher and decipher
+  /*zero parameter helper method for encipher and decipher
   reads off the (alpha) characters in the message and stores them in a Matrix
   object. If the message is not enciphered, it enciphers the characters
   and if the message is enciphered, deciphers the characters, using the
@@ -225,7 +225,7 @@ public class HillCipher{
       we represent this extra space. Because it is involved in encipher's
       Matrix multiplication, we need it for the decipher as well. However,
       we also need to be able to tell how many extra chars are at the end of
-      the ciphertext, to disclude them from the final deciphered message.
+      the ciphertext, to omit them from the final deciphered message.
       Hence for every "leftover"/extra character added in encipher, we also add
       a symbol at the end of the string, allowing us to count the "extra
       characters" and remove them
