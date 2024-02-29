@@ -1,6 +1,6 @@
 Welcome! This is a collection of Java Classes that implement the following
 ciphers: Affine Transformation, Caesar Cipher, Exponentiation Cipher,
-Hill Cipher, RSA Cipher*, and Vigenere Cipher. There is also a toy
+Hill Cipher, RSA Cipher*, and Vigenère Cipher. There is also a toy
 frequency analyzer and decipher program in FrequencyAnalysis.java.
 
 This project was inspired by my Intro Number Theory class. During the class
@@ -18,7 +18,7 @@ Please contact me with any questions after reading my implementation notes.
 Implementation notes:
 
 Uploading/ lack of Git history: I actually did write the entire project in 
-a Git Repositry, using careful commits. Renaming the main folder made the 
+a Git Repository, using careful commits. Renaming the main folder made the 
 repository implode on itself, and after several recovery attempts I just 
 uploaded the source files instead.
 
@@ -26,7 +26,7 @@ uploaded the source files instead.
   BigInt equivalent. Such a conversion wouldn't add any fun to the project, so
   it was excluded. Hence, please only use relatively small primes.
 
-Exclusion of block ciphering in exponentation cipher: Severe parsing issues.
+Exclusion of block ciphering in exponentiation cipher: Severe parsing issues.
   Difficult to distinguish if final string block is, for example, "aab" or "ab"
   or "b" due to zero rounding.
   Future work could resolve this issue with sentries/ extra char notifications
@@ -53,5 +53,4 @@ Why Mary Shelley's Frankenstein? The novel is in the public domain, and I'm
   frankensteinLONG.txt (195 lines including blanks, 11,580 words, the first
     five chapters of "Frankenstein")
 
-Total time: Almost exactly one month, over the span of May & June 2020.
-  Unknow hours.
+Total time: Almost exactly one month, as a personal project, over the span of May & June 2020.
